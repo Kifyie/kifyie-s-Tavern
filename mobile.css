@@ -871,3 +871,13 @@ body {
     .content-area { padding: 12px; }
     .glass-panel { padding: 15px; }
 }
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding-bottom: env(safe-area-inset-bottom); /* iOS/Android safe area */
+}
