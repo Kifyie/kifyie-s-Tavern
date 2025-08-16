@@ -878,6 +878,31 @@ html, body {
   padding: 0;
 }
 
+/* MOBILE SAFE AREA FIX */
 body {
-  padding-bottom: env(safe-area-inset-bottom); /* iOS/Android safe area */
+    padding-bottom: env(safe-area-inset-bottom, 20px) !important;
 }
+
+.main-content {
+    height: calc(100vh - env(safe-area-inset-top, 0px) - env(safe-area-inset-bottom, 20px)) !important;
+    padding-bottom: env(safe-area-inset-bottom, 20px) !important;
+    box-sizing: border-box !important;
+}
+
+/* Fix bottom panels */
+.bottom-panels {
+    margin-bottom: env(safe-area-inset-bottom, 15px) !important;
+}
+
+/* Ensure no content gets cut off */
+.panel:last-child {
+    margin-bottom: env(safe-area-inset-bottom, 10px) !important;
+}
+
+/* iPhone X and newer safe areas */
+@supports (padding: max(0px)) {
+    .main-content {
+        padding-bottom: max(20px, env(safe-area-inset-bottom)) !important;
+    }
+}
+
