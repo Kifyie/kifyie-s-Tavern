@@ -9,7 +9,7 @@ body {
     background: #0a0a0f;
     color: #ffffff;
     overflow: hidden;
-    height: 100vh;
+    height: 100svh;
     -webkit-user-select: none;
     user-select: none;
     -webkit-tap-highlight-color: transparent;
@@ -885,7 +885,7 @@ body {
 }
 
 .main-content {
-    height: calc(100vh - env(safe-area-inset-top, 0px) - env(safe-area-inset-bottom, 20px)) !important;
+    height: calc(100svh - env(safe-area-inset-top, 0px) - env(safe-area-inset-bottom, 20px)) !important;
     padding-bottom: env(safe-area-inset-bottom, 20px) !important;
     box-sizing: border-box !important;
 }
@@ -906,5 +906,6 @@ body {
         padding-bottom: max(20px, env(safe-area-inset-bottom)) !important;
     }
 }
+
 
 
