@@ -13,6 +13,7 @@ body {
     -webkit-user-select: none;
     user-select: none;
     -webkit-tap-highlight-color: transparent;
+    height: -webkit-fill-avaliable;
 }
 
 /* Video Background */
@@ -905,4 +906,5 @@ body {
         padding-bottom: max(20px, env(safe-area-inset-bottom)) !important;
     }
 }
+
 
