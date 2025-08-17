@@ -233,6 +233,7 @@ body {
 }
 
 .clean-header .main-title span {
+    text-shadow: rgba(214,136,0,1) 0px 0px 50px;
     background: linear-gradient(
         90deg,
         #ff6b35 0%,
@@ -290,9 +291,10 @@ body {
 
 
 .clean-header .subtitle {
+    font-family: "Sour Gummy", sans-serif;
     font-size: clamp(1.2rem, 3.5vw, 1.8rem);
     color: rgba(255, 255, 255, 0.8);
-    font-weight: 300;
+    font-weight: 600;
     opacity: 0;
     transform: translateX(100px);
     animation: slideInRight 1s ease-out 0.8s 1 forwards;
@@ -300,6 +302,7 @@ body {
     text-align: center;
     width: 100%;
     display: block;
+    text-shadow: rgba(255,255,255,1) 0px 0px 50px;
 }
 
 
@@ -812,3 +815,4 @@ body {
     z-index: 9998 !important;
     position: relative !important;
 }
+
